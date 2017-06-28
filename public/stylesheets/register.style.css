@@ -1,0 +1,125 @@
+
+label{
+	margin-right: 10px;
+}
+
+a{
+	color: #fff;
+	text-decoration:none;
+}
+
+#content{
+	width: 600px;
+	height: auto;
+	border-radius: 10px;
+	position: relative;
+	left: 50%;
+	top: 10%;
+	margin-left: -300px;
+	padding-bottom: 20px;
+	text-align: center;
+	background: rgba(23,23,20,1);
+}
+
+#logo{
+	height: auto;
+	width: auto;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#content span{
+	font-size: 12px;
+	color: #ccc;
+	padding-left: 5px;
+	position: relative;
+}
+
+#content > p{
+	font-size: 60px;
+	color: #fff;
+	margin-bottom: 60px;
+	margin-top: 0;	
+}
+
+#label{
+	color: #fff;
+	width: 32%;
+	text-align: right;
+	float: left;
+}
+
+#label div{
+	margin-bottom: 33px;
+}
+
+#input-area{
+	position: relative;
+	width: 68%;
+	float: left;
+}
+
+#input-area form{
+	padding-left: 40px;
+	text-align: left;
+}
+
+#input-area form input{
+	margin-bottom: 10px;
+}
+
+#login{
+	width: 65px;
+	height: 32px;
+	position: relative;
+	background: rgba(79,79,74,1);
+	left: 110px;
+	bottom: 30px;
+	text-align: center;
+	line-height: 32px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.reg-con{
+	width: 100%;
+	min-height: 150px;
+}
+
+.reg-con > div{
+	height: 100%;
+}
+
+.input-box{
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.input-box span{
+	font-size: 12px;
+	color: #fff;
+	margin-left: 10px;
+}
+
+.submit{
+	position: relative;
+	left: -50px;
+	top: 10px;
+	height: auto;
+	width: auto;
+	pointer-events:none;
+}
+
+.submit input{
+	width: 60px;
+	height: 30px;
+	border-style: none;
+	border-radius: 5px;
+	background: #fff;
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+.clear{
+	clear: both;
+}

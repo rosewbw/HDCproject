@@ -1,0 +1,15 @@
+
+	<% include header.ejs %>
+	<div id="login-box" class="black-linear login-box-style">
+		<div><span><%= logotext %></span></div>
+		<p><%= title %></p>
+		<form action="/login" method="post" >
+			<p>UserName<input type="text" name="username"></p>
+			<p>Password<input type="password" name="password"></p>
+			<div>
+				<input class="butn" type="submit" value="Login">
+				<a href="/register"><div class="butn">register</div></a>
+			</div>
+		</form>
+	</div>	
+	<% include footer.ejs %>

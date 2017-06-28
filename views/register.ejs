@@ -1,0 +1,43 @@
+<% include header.ejs %>
+
+<div id="content">
+	<div id="logo"><span><%= logo %></span></div>
+	<p><%= title %></p>
+	<div id="register-content" class="reg-con">
+		<div id="label">
+			<div><label for="user-name">username</label></div>
+			<div><label for="pass-word">Password</label></div>
+			<div><label for="pass-word-confirm">Password confirm</label></div>
+			<div><label for="e-mail">e-mail</label></div>
+		</div>
+		<div id="input-area">
+			<form action="/register/postHandler" method="post">
+				<div class="input-box">
+					<input id="user-name" type="text" name="username">
+					<span>3~16位数字或英文</span>
+				</div>
+				<div class="input-box">
+					<input id="pass-word" type="password" name="password">
+					<span></span>
+				</div>
+				<div class="input-box">
+					<input id="pass-word-confirm" type="password" name="password-confirm">
+					<span></span>
+				</div>
+				<div class="input-box">
+					<input id="e-mail" type="text" name="email">
+					<span>xxx@xxx.com</span>
+				</div>
+				<div class="submit"><input type="submit" value="submit"></div>
+				<a href="/login"><div id="login">login</div></a>
+			</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+</div>
+
+<script src="/javascripts/ajax.register.js"></script>
+
+
+<% include footer.ejs %>

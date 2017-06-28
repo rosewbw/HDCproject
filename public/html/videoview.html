@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>view</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/videoview.css"/>
+</head>
+<body>
+	<div id="view-box">		
+		<video id="video" controls="controls"></video>		
+		<!-- <div id="controls"></div> -->
+		<div id="button"></div>
+	</div>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/javascripts/geturlparameter.js"></script>
+	<script src="/javascripts/preview-control.js"></script>
+	<script>
+		$(function() {
+			$.ajax({
+				url: '/api/getelements?id='+$.getUrlParam('id')+'&proName='+$.getUrlParam('proName'),
+				cache: false,
+				success: function(data) {
+					preview({
+						elmInfo: data,
+						butnLayer: 'button',
+						video: 'video',
+						videobox: 'view-box'
+					});
+				},
+				error: function(xhr, status, err) {
+					console.log(err);
+					alert(err);
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

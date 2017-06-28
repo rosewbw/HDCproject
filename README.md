@@ -1,2 +1,1 @@
-# myproject
-work for knowledge graph
+# newproject
